@@ -6,10 +6,10 @@ import Article from '../Article';
 
 import withWrapper from '../withWraper';
 
-function List({ list }) {
-  const WrappedVideo = withWrapper(Video);
-  const WrappedArticle = withWrapper(Article);
+const WrappedVideo = withWrapper(Video);
+const WrappedArticle = withWrapper(Article);
 
+function List({ list }) {
   return list.map((item) => {
     switch (item.type) {
       case 'video':
